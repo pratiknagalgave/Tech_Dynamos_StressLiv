@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.techdynamosstresliv">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -9,6 +10,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TechDynamosStresLiv">
+        //webview
+        <activity android:name=".Reading.BlogView"></activity>
+        //reading
+        <activity android:name=".Reading.MotivationalBlogs"></activity>
+        <activity android:name=".Reading.MotivitionalBooks"></activity>
+        //Breath
+        <activity android:name=".breath.startBreathing"></activity>
+        <activity android:name=".breath.breathMain"></activity>
+        //Music
+        <activity android:name=".MoodMusic.moodMain"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
